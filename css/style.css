@@ -87,7 +87,7 @@ textarea:focus {
   color: #555;
 }
 .general-element__headline::before {
-  content: "\2693";
+  content: "\2691";
   position: absolute;
   top: 0;
   left: 0;
