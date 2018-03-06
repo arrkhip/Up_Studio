@@ -1,0 +1,37 @@
+/*===========================================================
+========================= BUTTONS ===========================
+===========================================================*/
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 2px;
+	font: 600 13px/13px @font-secondary; 
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #fff;
+	outline: none;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .3s ease-in;
+	.transition-base(background-color);
+	&_blue {
+		background-color: @color-main;
+		&:hover {
+			background-color: lighten(@color-main, 15%);
+		}
+		&:active {
+			background-color: darken(@color-main, 5%);
+		}
+	}
+	&_green {
+		background-color: @color-secondary;
+		&:hover {
+			background-color: saturate(@color-secondary, 20%);
+		}
+		&:active {
+			background-color: saturate(@color-secondary, -20%);
+		}
+	}
+}

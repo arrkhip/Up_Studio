@@ -1,0 +1,22 @@
+{
+  "name": "Up_Studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0"
+  },
+  "repository": {},
+  "author": "Arkhipov Vladislav",
+  "license": "ISC",
+  "dependencies": {},
+  "scripts": {
+  	"start": "gulp server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

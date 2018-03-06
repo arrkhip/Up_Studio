@@ -1,0 +1,63 @@
+/*===========================================================
+======================== TYPOGRAPHY =========================
+===========================================================*/
+.headline {
+	font: 300 32px/1 @font-main; 
+	color: @color-main;
+	@media only screen and (max-width: 768px) {
+		font-size: 24px; 
+	}
+	&_small {
+		font-size: 22px;
+		@media only screen and (max-width: 768px) {
+			font-size: 18px; 
+		}
+	}
+}
+
+.description {
+	margin: 0;
+	font: 400 15px/20px @font-main;
+	color: @color-main__light;
+	@media only screen and (max-width: 768px) {
+		font-size: 13px; 
+		line-height: 16px;
+	}
+}
+
+.section-head {
+	text-align: center;
+}
+
+.section-head .headline {
+	position: relative;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 65px;
+		height: 1px;
+		background-color: @color-secondary;
+		transform: translateX(-50%);
+	}
+}
+
+.section-head .description {
+	max-width: 500px;
+	margin: auto;
+}
+
+.link {
+	display: inline-block;
+	color: @color-main__light;
+	text-decoration: none;
+	.transition-base(color);
+	&:hover {
+		color: @color-secondary;
+	}
+}
+
+

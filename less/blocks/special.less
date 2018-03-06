@@ -1,0 +1,66 @@
+/*===========================================================
+========================= SPECIAL ===========================
+===========================================================*/
+.special {
+	position: relative;
+	height: 200px;
+	background: #eaeeef url("../img/special-bg.png") no-repeat 50% 0%;
+	background-size: cover;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(236, 240, 241, 0.95);
+	}
+	&_blue {
+		&::before {
+			background-color: fade(@color-main, 65%);
+		}
+		& .headline {
+			color: #fff;
+		}
+		& p {
+			color: #bfd0d0;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		height: auto;
+		padding: 50px 0;
+	}
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+		background-image: url("../img/special-bg_x2.png");
+	}
+}
+
+.special__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+	height: 100%;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.special__info p {
+	margin: 0;
+	margin-top: 5px;
+	font-size: 15px;
+	@media only screen and (max-width: 768px) {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+

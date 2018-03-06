@@ -1,0 +1,8 @@
+node_modules/
+others/
+.DS_Store
+Thumbs.db
+*.psd
+*.ai
+*.pdf
+*.log

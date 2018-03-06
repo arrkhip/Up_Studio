@@ -1,0 +1,89 @@
+/*===========================================================
+========================= PRICING ===========================
+===========================================================*/
+.pricing {
+	padding-top: 100px;
+}
+
+.pricing__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.pricing__list .price-card {
+	min-width: 245px;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		border-radius: 0;
+		&:first-child {
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		&:nth-child(2) {
+			border-left: none;
+			border-right: none;
+		}
+		&:last-child {
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+	}
+}
+
+.pricing__plans {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 15px;
+	@media only screen and (max-width: 630px) {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.pricing__plans-col {
+	@media only screen and (max-width: 630px) {
+		width: 290px;
+		margin: auto;
+	}
+	@media only screen and (max-width: 325px) {
+		width: 285px;
+	}
+}
+
+.pricing__plans-item {
+	margin-bottom: 10px;
+	@media only screen and (min-width: 992px) {
+		&:last-child {margin-bottom: 0;}
+	}
+}
+
+.pricing__plans-icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+	vertical-align: middle;
+	fill: @color-main__light;
+}
+
+.pricing__plans-item span { 
+	line-height: 25px;
+}
+
+
+
+

@@ -1,0 +1,50 @@
+/*===========================================================
+========================== TEAM =============================
+===========================================================*/
+.team {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	background-color: #eef1ec;
+}
+
+.team__content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 75px;
+	@media only screen and (max-width: 1007px) {
+		justify-content: space-around;
+	}
+	@media only screen and (max-width: 768px) {
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+}
+
+.team .person {
+	margin-bottom: 50px;
+	@media only screen and (max-width: 768px) {
+		margin: auto;
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		&:nth-last-child(-n+2) {
+			margin-bottom: 0;
+		}
+	}
+	@media only screen and (min-width: 1007px) {
+		&:nth-last-child(-n+3) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+
+

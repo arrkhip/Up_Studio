@@ -1,0 +1,28 @@
+/*===========================================================
+========================= MIXINS ============================
+===========================================================*/
+.clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.container() {
+	width: 1200px;
+	margin: auto;
+	@media @md-width {
+		width: 960px;
+	}
+	@media @sm-width {
+		width: 640px;
+	}
+	@media @xs-width {
+		width: 320px;
+	}
+}
+
+.transition-base(@property: all; @spead: .3s) {
+	transition: @property @spead ease-in;
+}

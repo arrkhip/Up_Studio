@@ -1,0 +1,76 @@
+/*===========================================================
+========================= PERSON ============================
+===========================================================*/
+.person {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	@media only screen and (max-width: 768px) {
+		padding-bottom: 45px;
+		text-align: center;
+	}
+}
+
+.person__photo {
+	margin-bottom: 20px;
+	filter: saturate(90%);
+	.transition-base();
+	&:hover {
+		filter: saturate(110%);
+	}
+	@media only screen and (min-width: 768px) {
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+.person__name {
+	font-size: 15px;
+	font-weight: 500;
+	color: @color-main;
+}
+
+.person__post {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.person__social {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 10px 0;
+		border-top: 1px solid fade(@color-secondary, 40%);
+		background-color: fade(@color-main, 40%);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(50px);
+		.transition-base();
+	}
+	
+}
+
+.person__photo:hover .person__social {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.person__social-icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+	.transition-base(opacity);
+	&:hover {
+		opacity: .8;
+	}
+}
+
+
+
+
+
